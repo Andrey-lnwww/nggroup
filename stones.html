@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240419212843">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240425144908">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,17 +21,33 @@
 					<div class="header__menu menu">
 						<nav class="menu__body">
 							<ul class="menu__list">
-								<li class="menu__item"><a href="#" class="menu__link link menu-sub">Продукция</a>
-									<ul class="menu-sub__list">
-										<li class="menu-sub__item"><a href="#" class="menu-sub__item">Асфальтобетон</a></li>
-										<li class="menu-sub__item"><a href="#" class="menu-sub__item">Бетон всех марок</a></li>
-										<li class="menu-sub__item"><a href="#" class="menu-sub__item">Бортовые камни, брусчатка</a></li>
+								<li class="menu__item menu__item-sub">
+									<a href="#" class="menu__link link menu__link-sub">Продукция</a>
+									<button type="button" class="menu__item-arrow">
+										<svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.890137 1L5.89014 6L10.8901 1" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<ul class="menu-sub">
+										<li class="menu-sub__item"><a class="menu-sub__link link" href="#">Асфальтобетон</a></li>
+										<li class="menu-sub__item"><a class="menu-sub__link link" href="#">Бетон всех марок</a>
+										</li>
+										<li class="menu-sub__item"><a class="menu-sub__link link" href="#">Бортовые камни,
+												брусчатка</a>
+										</li>
 									</ul>
 								</li>
-								<li class="menu__item"><a href="#" class="menu__link link menu-sub">Услуги</a>
-									<ul class="menu-sub__list">
-										<li class="menu-sub__item"><a href="#" class="menu-sub__item">Аренда спецтехники</a></li>
-										<li class="menu-sub__item"><a href="#" class="menu-sub__item">Благоустройство, ремонт, строительство
+								<li class="menu__item menu__item-sub"><a href="#" class="menu__link link menu__link-sub">Услуги</a>
+									<button type="button" class="menu__item-arrow">
+										<svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.890137 1L5.89014 6L10.8901 1" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<ul class="menu-sub">
+										<li class="menu-sub__item"><a class="menu-sub__link link" href="#">Аренда
+												спецтехники</a></li>
+										<li class="menu-sub__item"><a class="menu-sub__link link" href="#">Благоустройство, ремонт,
+												строительство
 												и обслуживание автомобильных дорог</a></li>
 									</ul>
 								</li>
@@ -67,8 +83,8 @@
 			</div>
 		</header>
 		<main class="page">
-			<div class="banner" style="background-image: url( img/banner/3-bg.png);">
-				<div class="banner__container">
+			<div class="page-title" style="background-image: url( img/page-title/3-bg.png);">
+				<div class="page-title__container">
 					<nav class="breadcrumbs breadcrumbs--transparent">
 						<ul class="breadcrumbs__list">
 							<li class="breadcrumbs__item breadcrumbs__item--white">
@@ -82,10 +98,11 @@
 							</li>
 						</ul>
 					</nav>
-					<div class="banner__content">
-						<div class="banner__text">
-							<h1 class="banner__title">Бортовые камни, брусчатка</h1>
-							<p class="banner__subtitle">Производство бетонных изделий различного типа с соблюдением качества готовой
+					<div class="page-title__content">
+						<div class="page-title__text">
+							<h1 class="page-title__title">Бортовые камни, брусчатка</h1>
+							<p class="page-title__subtitle">Производство бетонных изделий различного типа с соблюдением качества
+								готовой
 								продукции по ГОСТ</p>
 						</div>
 					</div>
@@ -257,34 +274,34 @@
 						<div class="gallery__container">
 							<div class="gallery-slider">
 								<div class="gallery-slider__swiper swiper">
-									<div class="gallery-slider__wrapper swiper-wrapper">
-										<div class="gallery-slider__slide swiper-slide">
+									<div data-gallery class="gallery-slider__wrapper swiper-wrapper">
+										<a class="gallery-slider__slide swiper-slide" href="img/gallery/1-big.png">
 											<picture><source srcset="img/gallery/1.webp" type="image/webp"><img src="img/gallery/1.png" alt="" width="440" height="300" loading="lazy"></picture>
-										</div>
-										<div class="gallery-slider__slide swiper-slide">
-											<picture><source srcset="img/gallery/2.webp" type="image/webp"><img src="img/gallery/2.png" alt="" width="440" height="300" loading="lazy"></picture>
-										</div>
-										<div class="gallery-slider__slide swiper-slide">
-											<picture><source srcset="img/gallery/3.webp" type="image/webp"><img src="img/gallery/3.png" alt="" width="440" height="300" loading="lazy"></picture>
-										</div>
-										<div class="gallery-slider__slide swiper-slide">
+										</a>
+										<a class="gallery-slider__slide swiper-slide" href="img/gallery/2-big.png">
+											<picture><source srcset="img/gallery/2.webp" type="image/webp"><img href="#" src="img/gallery/2.png" alt="" width="440" height="300" loading="lazy"></picture>
+										</a>
+										<a class="gallery-slider__slide swiper-slide" href="img/gallery/3-big.png">
+											<picture><source srcset="img/gallery/3.webp" type="image/webp"><img href="#" src="img/gallery/3.png" alt="" width="440" height="300" loading="lazy"></picture>
+										</a>
+										<a class="gallery-slider__slide swiper-slide" href="img/gallery/1-big.png">
 											<picture><source srcset="img/gallery/1.webp" type="image/webp"><img src="img/gallery/1.png" alt="" width="440" height="300" loading="lazy"></picture>
-										</div>
-										<div class="gallery-slider__slide swiper-slide">
-											<picture><source srcset="img/gallery/2.webp" type="image/webp"><img src="img/gallery/2.png" alt="" width="440" height="300" loading="lazy"></picture>
-										</div>
-										<div class="gallery-slider__slide swiper-slide">
-											<picture><source srcset="img/gallery/3.webp" type="image/webp"><img src="img/gallery/3.png" alt="" width="440" height="300" loading="lazy"></picture>
-										</div>
-										<div class="gallery-slider__slide swiper-slide">
+										</a>
+										<a class="gallery-slider__slide swiper-slide" href="img/gallery/2-big.png">
+											<picture><source srcset="img/gallery/2.webp" type="image/webp"><img href="#" src="img/gallery/2.png" alt="" width="440" height="300" loading="lazy"></picture>
+										</a>
+										<a class="gallery-slider__slide swiper-slide" href="img/gallery/3-big.png">
+											<picture><source srcset="img/gallery/3.webp" type="image/webp"><img href="#" src="img/gallery/3.png" alt="" width="440" height="300" loading="lazy"></picture>
+										</a>
+										<a class="gallery-slider__slide swiper-slide" href="img/gallery/1-big.png">
 											<picture><source srcset="img/gallery/1.webp" type="image/webp"><img src="img/gallery/1.png" alt="" width="440" height="300" loading="lazy"></picture>
-										</div>
-										<div class="gallery-slider__slide swiper-slide">
-											<picture><source srcset="img/gallery/2.webp" type="image/webp"><img src="img/gallery/2.png" alt="" width="440" height="300" loading="lazy"></picture>
-										</div>
-										<div class="gallery-slider__slide swiper-slide">
-											<picture><source srcset="img/gallery/3.webp" type="image/webp"><img src="img/gallery/3.png" alt="" width="440" height="300" loading="lazy"></picture>
-										</div>
+										</a>
+										<a class="gallery-slider__slide swiper-slide" href="img/gallery/2-big.png">
+											<picture><source srcset="img/gallery/2.webp" type="image/webp"><img href="#" src="img/gallery/2.png" alt="" width="440" height="300" loading="lazy"></picture>
+										</a>
+										<a class="gallery-slider__slide swiper-slide" href="img/gallery/3-big.png">
+											<picture><source srcset="img/gallery/3.webp" type="image/webp"><img href="#" src="img/gallery/3.png" alt="" width="440" height="300" loading="lazy"></picture>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -407,7 +424,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20240419212843"></script>
+	<script src="js/app.min.js?_v=20240425144908"></script>
 
 </body>
 
